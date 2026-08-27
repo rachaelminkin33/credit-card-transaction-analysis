@@ -43,6 +43,7 @@ Transactions
   │ user_id + card_index
   ↕
 Cards
+```
 
 ## SQL Analysis
 
@@ -140,6 +141,7 @@ credit-card-transaction-analysis/
 │
 └── data/
     └── README.md
+```
 
 ## Next Steps
 
