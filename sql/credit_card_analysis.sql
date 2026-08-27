@@ -10,6 +10,21 @@
 --
 -- Analysis uses a 500,000-transaction sample from the
 -- full transaction dataset for portfolio analysis.
+--
+-- Skills Demonstrated:
+-- - Data validation
+-- - Relational joins
+-- - Common Table Expressions (CTEs)
+-- - CASE-based segmentation
+-- - Conditional aggregation
+-- - Fraud-rate calculations
+-- - Customer-level analysis
+-- - Reusable SQL views
+--
+-- Note:
+-- Results represent observed patterns within the analyzed
+-- sample and should not be interpreted as causal relationships
+-- or predictive fraud models.
 -- ============================================================
 
 
