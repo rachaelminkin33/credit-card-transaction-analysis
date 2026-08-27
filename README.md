@@ -2,20 +2,22 @@
 
 ## Overview
 
-An end-to-end SQL analysis of 500,000 credit card transactions using PostgreSQL to examine transaction behavior, card usage, customer characteristics, and observed fraud patterns.
+An end-to-end credit card transaction and fraud analysis project using PostgreSQL, SQL, and Tableau Public to examine transaction behavior, card usage, customer characteristics, spending patterns, and observed fraud rates.
 
-The project combines transaction-level, card-level, and customer-level data to identify patterns in fraud risk and spending behavior. SQL analysis views were created to support downstream business intelligence visualization.
+The project combines transaction-level, card-level, and customer-level data to identify patterns in fraud risk and spending behavior. SQL analysis views were created to support downstream business intelligence visualization, and the resulting analysis was presented through an interactive Tableau Public dashboard.
 
 ## Business Objective
 
-The goal of this analysis is to answer questions such as:
+The goal of this analysis is to identify patterns in transaction behavior, spending, and observed fraud that could inform fraud monitoring and customer segmentation.
+
+The analysis addresses questions such as:
 
 - Which payment methods have the highest observed fraud rates?
 - Does observed fraud vary by card type?
 - How does observed fraud rate differ across customer FICO groups?
-- How does transaction size vary across income groups?
+- How does average transaction size vary across income groups?
 - Which card types account for the most spending?
-- How do customer income and credit score relate to transaction behavior?
+- How do customer income and credit characteristics relate to transaction behavior?
 
 ## Dataset
 
@@ -129,6 +131,23 @@ Several limitations should be considered when interpreting the results:
 
 **PostgreSQL | SQL | Tableau Public**
 
+## Tableau Dashboard
+
+The completed analysis was translated into an interactive Tableau Public dashboard designed to communicate the primary findings through KPI summaries, fraud-rate comparisons, and spending behavior visualizations.
+
+The dashboard includes:
+
+- Overall transaction, spending, average transaction, and observed fraud-rate KPIs
+- Observed fraud rate by payment method
+- Observed fraud rate by card type
+- Observed fraud rate by FICO group
+- Average transaction size by customer income group
+- Total spending by card type
+
+### View the Dashboard
+
+[View the interactive Tableau Public dashboard](https://public.tableau.com/views/CreditCardTransactionFraudAnalysis_17878634083290/CreditCardTransactionFraudAnalysis?:language=en-US)
+
 ## Project Structure
 
 ```text
@@ -147,7 +166,7 @@ credit-card-transaction-analysis/
 
 Potential extensions to this analysis include:
 
-- Building an interactive BI dashboard
+- Expanding the dashboard with additional time-based and geographic analysis
 - Analyzing fraud trends over time
 - Investigating merchant categories associated with fraud
 - Examining geographic fraud patterns
